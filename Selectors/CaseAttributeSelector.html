@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [id="foo"],
+        [type="text"] {
+            background-color: red;
+        }
+        
+        div[id="FOO" i],
+        input[type="tExT" s] {
+            background-color: lightgreen;
+        }
+
+        div[id="FOO" s],
+        
+        input[type="TEXT" i] {
+            background-color: blue;
+        }
+
+        a[target="abc"] {
+            color: red;
+        }
+
+        div {
+            width: 200px;
+        }
+
+
+        body {padding-top: 2em;}
+    </style>
+</head>
+<body>
+    <div id="foo">IDs are by default case sensitive</div>
+    <input type="TeXt" value="HTML keywords are not"/>
+    <ul><li><a href="http://mozilla.com" target="ABC">Mozilla - ABC</a></li><li>
+    <a href="http://mozilla.com" target="abc">Mozilla - abc</a></li><li>
+    <a href="http://mozilla.com" target="Abc">Mozilla - Abc</a></li>
+    <a href="http://mozilla.com" target="Abc">Mozilla - Abc</a> - same as previous one.</li>
+    </ul>
+</body>
+</html>
