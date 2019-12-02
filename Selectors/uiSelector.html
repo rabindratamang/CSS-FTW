@@ -11,12 +11,25 @@
             color: red;
             content: " *";
         }
+
+        form input:disabled + label::after
+        {
+            color: grey;
+            content: " :(";
+        }
+
+        form input:disabled + label
+        {
+            color: grey;
+        }
     </style>
 </head>
 <body>
     <form action="">
         <input type="text" name="Name" required >
         <label>Name</label>
+        <input type="text" name="Age" disabled >
+        <label>age</label>
     </form>
 </body>
 </html>
