@@ -6,10 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    
+        li:last-child , li:first-child{
+            font-weight: bold;
+        }
+
+        li:first-of-type, li:last-of-type{
+            text-decoration: line-through;
+        }
+
+        li:nth-child(even){
+            color: green;
+        }
+        li:nth-child(odd){
+            color: rgb(22, 147, 219);
+        }
+        li:nth-child(3){
+            color: rgb(243, 107, 107);
+        }
+
+        li:nth-last-child(4n){
+            color:saddlebrown;
+        }
+        
     </style>
 </head>
 <body>
-    
+    <ul>
+        <li>Hello</li>
+        <li>Hello1</li>
+        <li>Hello2</li>
+        <li>Hello3</li>
+        <li>Hello4</li>
+        <li>Hello5</li>
+        <li>Hello6</li>
+        <li>Hello7</li>
+        <li>Hello8</li>
+        <li>Hello9</li>
+    </ul>
 </body>
 </html>
