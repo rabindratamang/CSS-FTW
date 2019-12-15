@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+          section > div {
+        background: white;
+        z-index: -2;
+        left: 0;
+        top: 30px;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
         li a {
             display: block;
             color: white;
@@ -23,40 +33,48 @@
             background: grey;
         }
 
-        .r-black{
-            background: black;
-            color: white;
-        }
-
-        .r-black li{
-            display: inline-block;
+        .tab-content li{
             list-style: none;
             margin: 0;
             padding: 0;
+            background: grey;
+            border: 1px solid white;
         }
 
-       
+      .tab-content section:not(:target) div{
+            display: none;
+       }
+
+       .tab-content section:not(:target) li{
+            background: black;
+       }
     </style>
 </head>
 <body>
-        <div class="r-bar r-black">
+    <div class="tab-content">
+        <section id="London" class="city">
             <li><a href="#London">London</a></li>
+            <div>
+                <h2>London</h2>
+                <p>London is the capital of England.</p>
+            </div>
+        </section>
+        
+        <section id="Paris" class="city">
             <li><a href="#Paris">Paris</a></li>
+            <div>
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+        </section>
+        
+        <section id="Tokyo" class="city">
             <li><a href="#Tokyo">Tokyo</a></li>
-        </div>
-        <div id="London" class="city">
-            <h2>London</h2>
-            <p>London is the capital of England.</p>
-        </div>
-        
-        <div id="Paris" class="city">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
-        </div>
-        
-        <div id="Tokyo" class="city">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-        </div>
+            <div>
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
