@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover, a:focus{
+            background: grey;
+        }
+
+        .r-black{
+            background: black;
+            color: white;
+        }
+
+        .r-black li{
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+    </style>
+</head>
+<body>
+        <div class="r-bar r-black">
+            <li><a href="#London">London</a></li>
+            <li><a href="#Paris">Paris</a></li>
+            <li><a href="#Tokyo">Tokyo</a></li>
+        </div>
+        <div id="London" class="city">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+        </div>
+        
+        <div id="Paris" class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+        </div>
+        
+        <div id="Tokyo" class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+        </div>
+</body>
+</html>
